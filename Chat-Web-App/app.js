@@ -8,7 +8,6 @@ const PORT          = process.env.PORT || 65535
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    console.log(req.protocol)
     res.render("index", {port: PORT, host: req.hostname, protocol: req.protocol})
 })
 
