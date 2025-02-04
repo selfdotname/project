@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <h1>Hello <%= name %></h1>
+        <button onclick="openConn()">open connection</button><br>
+        <button onclick="closeConn()">close connection</button>
+
+        <script>
+            window.onload   = () => {
+                app         = {}
+            }
+
+            function openConn() {
+                const ws    = new WebSocket("ws://localhost:<%= port %>")
+                app.ws      = ws
+
+                ws.onopen   = () => {
+                    console.log("web socket connection open on port: <%= port %>")
+                }
+
+                ws.onclose  = () => {
+                    console.log("web socket connection closed")
+                }
+            }
+
+            function closeConn() {
+                app.ws.close()
+            }
+        </script>
+</body>
+
+</html>
