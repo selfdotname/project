@@ -28,6 +28,10 @@
                 ws.onclose  = () => {
                     console.log("web socket connection closed")
                 }
+
+                ws.onerror  = (err) => {
+                    console.log(err)
+                }
             }
 
             function closeConn() {
