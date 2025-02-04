@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Test</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Socket.IO Client</h1>
+    <button onclick="sendMessage()">Send Message</button>
+
+    <script>
+        const socket = io("http://<%= host %>:<%= port %>");
+
+        socket.on("connect", () => {
+            console.log("Connected:", socket.id);
+        });
+
+        socket.on("message", (data) => {
+            console.log("Message from server:", data);
+        });
+
+        function sendMessage() {
+            socket.emit("message", "Hello, Server!");
+        }
+    </script>
+</body>
+</html>
