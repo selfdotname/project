@@ -11,7 +11,7 @@
     <button onclick="sendMessage()">Send Message</button>
 
     <script>
-        const socket = io("<%= protocol %>://<%= host %>:<%= port %>");
+        const socket = io("https://<%= host %>:<%= port %>");
 
         socket.on("connect", () => {
             console.log("Connected:", socket.id);
