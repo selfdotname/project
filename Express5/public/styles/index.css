@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kaushan+Script&family=Titan+One&display=swap');
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img,
+a,
+input,
+button {
+    display: block;
+}
+
+/* header */
+header {
+    padding: 40px;
+    background-color: #fff;
+}
+
+header .logo {
+    font-family: "Kaushan Script";
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* row1 */
+.row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+/* form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+}
+
+form .inputContainer {
+    display: flex;
+    height: fit-content;
+}
+
+form input {
+    padding: 10px;
+    flex: 1;
+}
+
+form>* {
+    margin-bottom: 30px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #f11;
+    border: 0;
+    color: #fff;
+    width: 100%;
+}
