@@ -5,11 +5,9 @@ const router = express.Router()
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        console.log("hello world")
         cb(null, "uploads")
     },
     filename: (req, file, cb) => {
-        console.log("hello world")
         cb(null, new Date().getTime() + "-" + file.originalname)
     }
 })
