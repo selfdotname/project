@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Adeola Okafor",
+        "position": "Software Engineer",
+        "salary": 500000
+    },
+    {
+        "name": "Emeka Uche",
+        "position": "Project Manager",
+        "salary": 700000
+    },
+    {
+        "name": "Bola Adebayo",
+        "position": "UI/UX Designer",
+        "salary": 750000
+    },
+    {
+        "name": "Tunde Akinwale",
+        "position": "Backend Developer",
+        "salary": 850000
+    },
+    {
+        "name": "Chinwe Eze",
+        "position": "Frontend Developer",
+        "salary": 600000
+    },
+    {
+        "name": "Segun Alabi",
+        "position": "DevOps Engineer",
+        "salary": 1200000
+    },
+    {
+        "name": "Zainab Musa",
+        "position": "QA Tester",
+        "salary": 650000
+    },
+    {
+        "name": "Ifeanyi Nwosu",
+        "position": "Data Analyst",
+        "salary": 800000
+    },
+    {
+        "name": "Aisha Bello",
+        "position": "HR Manager",
+        "salary": 750000
+    },
+    {
+        "name": "Oluwaseun Adeyemi",
+        "position": "Cybersecurity Specialist",
+        "salary": 1250000
+    }
+]

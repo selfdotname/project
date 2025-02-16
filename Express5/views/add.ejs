@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="styles\add.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="logo">Trippicer</h1>
+        <!-- important -->
+        <div class="backBtn" onclick="back()">Back</div>
+    </header>
+    <!-- row 1 -->
+    <div class="row1">
+        <!-- important -->
+         <!-- .backBtn -->
+        <form action="/employee/add" method="post" onsubmit="handleSubmit(event)">
+            Employee Name:
+            <div class="inputContainer">
+                <input type="text"      name="name"     required>
+            </div>
+            Employee Position:
+            <div class="inputContainer">
+                <input type="text"      name="position" required>
+            </div>
+            Employee Salary:
+            <div class="inputContainer">
+                <input type="number"    name="salary"   required>
+            </div>
+            <button type="submit">Add Employee</button>
+            <% if (message) { %>
+                <div id="message"><%= message %></div>
+            <% } %>
+        </form>
+    </div>
+    <script>
+        const back = () => {
+            history.replaceState(null, "", "/employees")
+            location.reload()
+        }
+    </script>
+</body>
+</html>
