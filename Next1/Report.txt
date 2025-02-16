@@ -1,0 +1,5 @@
+Testing custom api routes
+
+Conclusion:
+    api/ (folder structure) => /api (browser url)
+    route.js gets called
