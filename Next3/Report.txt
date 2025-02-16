@@ -1,0 +1,6 @@
+Sending a request to MongoDb from Next app
+
+conclusion:
+    define model at @root/models/....js
+    connect to your db and render inside server component
+    export existing model first else export new one
