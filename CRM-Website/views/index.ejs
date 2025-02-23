@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Customer Management System</h1>
+    
+    <form action="/add-customer" method="POST">
+        <h2>Add Customer</h2>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone" required>
+        <textarea name="notes" placeholder="Notes"></textarea>
+        <button type="submit">Add Customer</button>
+    </form>
+
+    <h2>Customer List</h2>
+    <ul>
+        <% customers.forEach(customer => { %>
+            <li>
+                <strong><%= customer.name %></strong> - <%= customer.email %> - <%= customer.phone %>
+                <p><%= customer.notes %></p>
+                <form action="/delete-customer/<%= customer._id %>" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
+
