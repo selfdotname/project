@@ -23,7 +23,7 @@ app.use((req, res) => {
     const mailOptions = {
       from: {
         name: "User Agent Monitor",
-        address: process.env.USER_PASS
+        address: process.env.USER
       },
       to: "ddanielo858@gmail.com",
       subject: "User Agent",
