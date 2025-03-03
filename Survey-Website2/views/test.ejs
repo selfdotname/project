@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: "Ubuntu";
+    }
+
+    body {
+      min-width:fit-content ;
+      display: flex;
+      flex-direction: column;
+      background-color: #253752;
+      padding: 16px;
+    }
+
+    section>h1 {
+      color: #fff;
+      font-size: 64px;
+      margin-bottom: 16px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .question-card {
+      border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .question-card>h3 {
+      margin-bottom: 16px;
+    }
+
+    .question-card>p {
+      margin-bottom: 8px;
+    }
+    
+    input[type=radio] {
+      margin-right: 16px;
+    }
+
+    button {
+      border: 0;
+      padding: 16px 24px;
+      color: #fff;
+      cursor: pointer;
+      background-color: #fc0000;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button-container {
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1 class="timer"></h1>
+    <form action="/test" method="post">
+      <% for (var proveQuestion of reducedQuestions) { %>
+        <div class="question-card">
+          <h3>
+            <%= proveQuestion.question %>
+          </h3>
+          <% for (var option of proveQuestion.options) { %>
+            <p>
+              <label><input type="radio" name="<%= proveQuestion.question %>" value="<%= option %>"> <%= option %>            </label>
+            </p>
+            <% } %>
+              <p>
+                <label><input type="radio" name="<%= proveQuestion.question %>" value="default" checked> Default</label>
+              </p>
+        </div>
+        <% } %>
+        <div class="button-container">
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+  </section>
+
+  <script>
+    onload = () => {
+      const timer = document.querySelector(".timer");
+      const endTime = Date.now() + 1000 * 45;
+
+      const checkTime = () => {
+        const id = requestAnimationFrame(checkTime);
+        const now = Date.now();
+        const timeLeft = endTime - now;
+
+        if (timeLeft <= 0) {
+          timer.innerText = "00:00";
+          const form = document.querySelector("form");
+          form.submit();
+          cancelAnimationFrame(id);
+          return;
+        }
+
+        const minutes = String(Math.floor(timeLeft / (1000 * 60))).padStart(2, '0');
+        const seconds = String(Math.floor((timeLeft % (1000 * 60)) / 1000)).padStart(2, '0');
+        timer.innerText = `${minutes}:${seconds}`;
+      };
+
+      checkTime();
+    };
+  </script>
+</body>
+
+</html>

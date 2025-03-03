@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: "Ubuntu";
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+    input {
+      border-radius: 4px;
+      display: block;
+      padding: 8px;
+      min-width: 350px;
+      margin: 16px 0;
+    }
+    
+    
+    section {
+      padding: 16px;
+      flex: 1;
+    }
+    
+    section>* {
+      margin-bottom: 16px;
+    }
+    section>h1 {
+      font-size: 48px;
+    }
+    
+    textarea {
+      border-radius: 4px;
+      min-width: 350px;
+      resize: vertical;
+      padding: 8px;
+      margin-bottom: 16px;
+      min-height: 64px;
+    }
+    
+    button {
+      border: 0;
+      padding: 8px 16px;
+      background-color: #256ad1;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    footer {
+      padding: 16px;
+      color: #fff;
+      background-color: #253752;
+    }
+
+    footer>p {
+      margin-top: 16px;
+    }
+    </style>
+</head>
+
+<body>
+  <section>
+    <h1>Web Dev Survey</h1>
+    <h3>Take a short survey on the tools you prefer working with as a web developer</h3>
+    <p><a href="/register">Register</a> or <a href="/log-in">Sign in</a> to take survey</p>
+  </section>
+  <footer>
+    <form action="/" method="post">
+      <h2>Send feedback or leave a message</h2>
+      <p>
+        <input type="text" name="email" placeholder="Email">
+      </p>
+      <textarea name="message" placeholder="Message"></textarea>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+      <% if (msg) { %>
+        <p>
+          <%= msg %>
+        </p>
+        <% } %>
+    </form>
+    <p>Copyright &copy; 2025 Obaro</p>
+  </footer>
+</body>
+
+</html>
