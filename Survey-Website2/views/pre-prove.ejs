@@ -45,6 +45,10 @@
       margin-bottom: 16px;
     }
 
+    body>h2{
+      font-size: 48px;
+    }
+
     .not-ready {
       background-color: #fc0000;
     }
@@ -56,12 +60,12 @@
 </head>
 
 <body>
-  <p>
+  <h1>
     You are about to answer 10 simple questions that would prove you are indeed a web developer. You have <b>1</b>m
     <b>30</b>s
     to answer them. If you score lower than average you will not be able to take the survey. It will be assumed you
     are not a web developer
-  </p>
+  </h1>
 
   <form action="/prove-lobby" method="post">
     <input type="hidden" name="directive" value="take test">
