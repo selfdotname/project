@@ -378,6 +378,7 @@ app.get("/blocked", async (req, res) => {
 })
 
 app.get("/results", async (req, res) => {
+   if (!req.cookies.email) { return res.redirect("/") }
   const matches = await AccountModel.find({ email: req.cookies.email })
   if (matches.length == 1) {
     switch (matches[0].status) {
