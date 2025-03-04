@@ -208,7 +208,7 @@ app.route("/survey")
           try { referer = url.parse(req.get("Referer")).pathname } catch (err) { }
           const surveyQuestions = await SurveyQuestionsModel.find()
           if (referer == "/survey") {
-            return res.render("survey", { msg: "Invalid Survey Questions/Answers. Reload page and try again.", surveyQuestions })
+            return res.render("survey", { msg: "Invalid Survey Questions/Answers. Try again.", surveyQuestions })
           }
           return res.render("survey", { msg: null, surveyQuestions })
       }
