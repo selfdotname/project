@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "question": "What's your stack?",
+    "options": [
+      "Front-End",
+      "Back-end",
+      "Full-stack"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which language do you prefer working with server-side?",
+    "options": [
+      "JavaScript (Nodejs)",
+      "Python",
+      "PHP",
+      "Java",
+      "Ruby",
+      "C#",
+      "Others",
+      "Not a Back-end or Full-stack Developer"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which do you prefer working with?",
+    "options": [
+      "Web Builders (WordPress, Wix, etc)",
+      "HTML, CSS & JavaScript",
+      "Not a Front-end Developer"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which JavaScript framework do you prefer working with?",
+    "options": [
+      "React/Nextjs",
+      "Vue/Nuxtjs",
+      "Angular",
+      "Svelte/SvelteKit",
+      "No frameworks",
+      "Others"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which Database do you prefer working with?",
+    "options": [
+      "SQL",
+      "NoSQL",
+      "Not a Full-stack or Back-end Developer"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What Database do you use?",
+    "options": [
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "MariaDB",
+      "Supabase",
+      "Others",
+      "Not a Full-stack or Back-end Developer"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Are you hired?",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  }
+]

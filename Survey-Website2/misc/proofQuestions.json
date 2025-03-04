@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlink and Text Markup Language", "Hyper Tool Management Language"],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": ["<link>", "<a>", "<href>", "<nav>", "<hlink>"],
+    "answer": "<a>"
+  },
+  {
+    "id": 3,
+    "question": "Which CSS property controls the text size?",
+    "options": ["text-size", "font-size", "size", "text-style", "font-weight"],
+    "answer": "font-size"
+  },
+  {
+    "id": 4,
+    "question": "Which language is used for web page structure?",
+    "options": ["JavaScript", "CSS", "HTML", "PHP", "SQL"],
+    "answer": "HTML"
+  },
+  {
+    "id": 5,
+    "question": "What does CSS stand for?",
+    "options": ["Cascading Style Sheet", "Computer Style System", "Creative Style Sheet", "Colorful Style Sheet", "Coding Style Script"],
+    "answer": "Cascading Style Sheet"
+  },
+  {
+    "id": 6,
+    "question": "Which JavaScript method is used to print content in the console?",
+    "options": ["print()", "log()", "console.print()", "console.log()", "show()"],
+    "answer": "console.log()"
+  },
+  {
+    "id": 7,
+    "question": "Which tag is used to define an image in HTML?",
+    "options": ["<img>", "<image>", "<pic>", "<photo>", "<src>"],
+    "answer": "<img>"
+  },
+  {
+    "id": 8,
+    "question": "What is the correct way to include an external CSS file?",
+    "options": ["<style>", "<link>", "<css>", "<script>", "<stylesheet>"],
+    "answer": "<link>"
+  },
+  {
+    "id": 9,
+    "question": "Which of these is NOT a JavaScript data type?",
+    "options": ["Number", "Boolean", "String", "Table", "Object"],
+    "answer": "Table"
+  },
+  {
+    "id": 10,
+    "question": "Which symbol is used for comments in CSS?",
+    "options": ["//", "#", "/* */", "--", "<!-- -->"],
+    "answer": "/* */"
+  },
+  {
+    "id": 11,
+    "question": "Which HTTP method is used to submit data to a server?",
+    "options": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    "answer": "POST"
+  },
+  {
+    "id": 12,
+    "question": "What does DOM stand for?",
+    "options": ["Document Object Model", "Data Object Management", "Dynamic Output Model", "Digital Object Map", "Document Oriented Module"],
+    "answer": "Document Object Model"
+  },
+  {
+    "id": 13,
+    "question": "Which HTML tag is used to create a table?",
+    "options": ["<div>", "<table>", "<grid>", "<tab>", "<section>"],
+    "answer": "<table>"
+  },
+  {
+    "id": 14,
+    "question": "What is the default position in CSS?",
+    "options": ["relative", "absolute", "static", "fixed", "sticky"],
+    "answer": "static"
+  },
+  {
+    "id": 15,
+    "question": "Which JavaScript function is used to select an element?",
+    "options": ["getElement()", "querySelector()", "selectElement()", "findElement()", "chooseElement()"],
+    "answer": "querySelector()"
+  },
+  {
+    "id": 16,
+    "question": "What is used to style HTML pages?",
+    "options": ["CSS", "JavaScript", "Python", "PHP", "SQL"],
+    "answer": "CSS"
+  },
+  {
+    "id": 17,
+    "question": "Which tag is used to define a form?",
+    "options": ["<input>", "<form>", "<fieldset>", "<submit>", "<div>"],
+    "answer": "<form>"
+  },
+  {
+    "id": 18,
+    "question": "Which CSS property is used to change text color?",
+    "options": ["font-color", "text-color", "color", "text-style", "foreground"],
+    "answer": "color"
+  },
+  {
+    "id": 19,
+    "question": "What does JSON stand for?",
+    "options": ["JavaScript Object Notation", "JavaScript Online Network", "Java Syntax Object Notation", "JavaScript Oriented Notation", "Java Object Naming"],
+    "answer": "JavaScript Object Notation"
+  },
+  {
+    "id": 20,
+    "question": "Which tag is used to add a line break?",
+    "options": ["<lb>", "<br>", "<break>", "<hr>", "<line>"],
+    "answer": "<br>"
+  },
+  {
+    "id": 21,
+    "question": "Which attribute is used to specify an image path?",
+    "options": ["src", "href", "link", "path", "file"],
+    "answer": "src"
+  },
+  {
+    "id": 22,
+    "question": "Which method sends data in the URL?",
+    "options": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    "answer": "GET"
+  },
+  {
+    "id": 23,
+    "question": "Which CSS property makes text bold?",
+    "options": ["font-weight", "font-style", "text-bold", "font-bold", "font-thickness"],
+    "answer": "font-weight"
+  },
+  {
+    "id": 24,
+    "question": "What is the correct way to write a JavaScript array?",
+    "options": ["{1, 2, 3}", "[1, 2, 3]", "<1, 2, 3>", "(1, 2, 3)", "/1, 2, 3/"],
+    "answer": "[1, 2, 3]"
+  },
+  {
+    "id": 25,
+    "question": "Which tag is used for the largest heading?",
+    "options": ["<h6>", "<h3>", "<h1>", "<h4>", "<h2>"],
+    "answer": "<h1>"
+  },
+  {
+    "id": 26,
+    "question": "Which CSS property is used to add space inside an element?",
+    "options": ["padding", "margin", "border", "spacing", "inset"],
+    "answer": "padding"
+  },
+  {
+    "id": 27,
+    "question": "Which keyword declares a variable in JavaScript?",
+    "options": ["var", "let", "const", "all of the above", "define"],
+    "answer": "all of the above"
+  },
+  {
+    "id": 28,
+    "question": "What does the 'alt' attribute in an image tag do?",
+    "options": ["Specifies image size", "Sets the image alignment", "Provides alternate text", "Links the image", "Sets the background color"],
+    "answer": "Provides alternate text"
+  },
+  {
+    "id": 29,
+    "question": "Which CSS unit is relative to the font size of the element?",
+    "options": ["px", "em", "%", "vh", "rem"],
+    "answer": "em"
+  },
+  {
+    "id": 30,
+    "question": "What does API stand for?",
+    "options": ["Application Programming Interface", "Advanced Program Integration", "Automated Programming Interface", "Application Process Integration", "Asynchronous Programming Interface"],
+    "answer": "Application Programming Interface"
+  },
+  {
+    "id": 31,
+    "question": "Which HTML tag is used for JavaScript?",
+    "options": ["<js>", "<javascript>", "<script>", "<code>", "<run>"],
+    "answer": "<script>"
+  },
+  {
+    "id": 32,
+    "question": "Which CSS property changes element transparency?",
+    "options": ["visibility", "opacity", "filter", "transparency", "alpha"],
+    "answer": "opacity"
+  },
+  {
+    "id": 33,
+    "question": "Which method removes the last element in a JavaScript array?",
+    "options": ["remove()", "pop()", "delete()", "splice()", "shift()"],
+    "answer": "pop()"
+  },
+  {
+    "id": 34,
+    "question": "Which HTML tag is used for a dropdown list?",
+    "options": ["<list>", "<dropdown>", "<select>", "<option>", "<menu>"],
+    "answer": "<select>"
+  },
+  {
+    "id": 35,
+    "question": "What is the default flex-direction in CSS Flexbox?",
+    "options": ["row", "column", "row-reverse", "column-reverse", "inherit"],
+    "answer": "row"
+  },
+  {
+    "id": 36,
+    "question": "Which operator is used for strict equality in JavaScript?",
+    "options": ["==", "===", "=", "!=", "<=>"],
+    "answer": "==="
+  },
+  {
+    "id": 37,
+    "question": "Which HTML tag is used to play audio files?",
+    "options": ["<media>", "<sound>", "<audio>", "<play>", "<mp3>"],
+    "answer": "<audio>"
+  },
+  {
+    "id": 38,
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": ["200", "400", "401", "403", "404"],
+    "answer": "404"
+  },
+  {
+    "id": 39,
+    "question": "What is the correct way to comment in JavaScript?",
+    "options": ["<!-- comment -->", "// comment", "/* comment */", "# comment", "-- comment"],
+    "answer": "// comment"
+  },
+  {
+    "id": 40,
+    "question": "Which CSS property sets the element width to match its content?",
+    "options": ["width: fit-content;", "width: auto;", "width: inherit;", "width: content;", "width: max-content;"],
+    "answer": "width: fit-content;"
+  }
+]
