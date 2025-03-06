@@ -24,7 +24,7 @@
 
     function sendRequest() {
       if (!window.app.socket) {
-        const socket = new WebSocket(`${window.location.href}`)
+        const socket = new WebSocket(`wss://${window.location.href}`)
 
         socket.onopen = function () {
           console.log("Connected to server")
