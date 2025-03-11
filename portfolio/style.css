@@ -32,11 +32,10 @@ footer {
   animation: animate 10s ease-in-out infinite alternate;
 }
 .intro .effect {
-  padding: 32px 16px;
   background-image: linear-gradient(to right, #000, transparent);
 }
 .intro .effect .container {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .intro .effect .container * {
   color: #fff;
